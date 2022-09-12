@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./asset/img/logoweb.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <script src="./asset/js/index.js"></script>
+    <title>My Music</title>
+</head>
+<body>
+    <div class="container flex col-12">
+        <div class="section pos-fixed">
+            <div class = 'navbar_static'>
+                <div class="logo__web flex-all">
+                    <img class= 'img_web' src="./asset/img/logoweb.png" alt="">
+                    <span class="name_web">THH Music</span>
+                </div>
+                <!-- <ul class="menu_navbar-static">
+                    <li class="item_navbar menu_navbar-active">
+                        <i class="fas fa-home"></i>
+                        <p class='heading_menu-navbar'>Trang chủ</p>
+                    </li>
+                    <li class="item_navbar">
+                        <i class="fas fa-headphones"></i>
+                        <p class='heading_menu-navbar'>Cá nhân</p>
+                    </li>
+                    <li class="item_navbar">
+                        <i class="far fa-chart-bar"></i>
+                        <p class='heading_menu-navbar'>Xếp hạng</p>
+                    </li>
+                    <li class="item_navbar">
+                        <i class="fas fa-blog" style='margin-left: 3px;'></i>
+                        <p class='heading_menu-navbar'>Blog</p>
+                    </li>
+                </ul> -->
+            </div>
+            <!-- <ul class="navbar_dynamic">
+                <li class="item_navbar-dynamic">
+                    <i class="fas fa-music"></i>
+                    <p class="heading_navbar-dynamic">Nhạc mới</p>
+                </li>
+                <li class="item_navbar-dynamic">
+                    <i class="fas fa-th-large"></i>
+                    <p class="heading_navbar-dynamic">Thể loại</p>
+                </li>
+                <li class="item_navbar-dynamic">
+                    <i class="far fa-star"></i>
+                    <p class="heading_navbar-dynamic">Top 100</p>
+                </li>
+                <li class="item_navbar-dynamic box_vip">
+                    <p class="content_vip">Nội dung vip</p>
+                    <div class="btn_vip">Nâng cấp vip</div>                    
+                </li>
+                <li class="item_navbar-dynamic heading_library">
+                    <h2 class="heading_navbar_dynamic">Thư viện</h2>
+                </li>
+                <li class="item_navbar-dynamic">
+                    <i class="fab fa-spotify"></i>
+                    <p class="heading_navbar-dynamic">Bài hát</p>
+                </li>
+                <li class="item_navbar-dynamic">
+                    <i class="fas fa-list-ul"></i>
+                    <p class="heading_navbar-dynamic">Playlist</p>
+                </li>
+                <li class="item_navbar-dynamic">
+                    <i class="fas fa-clock"></i>
+                    <p class="heading_navbar-dynamic">Gần đây</p>
+                </li>
+            </ul> -->
+        </div>
+        <div class="aside pos-fixed flex">
+            <div class="header flex col-12">
+                <div class="header__left flex">
+                    <i class="icons_header fas fa-arrow-left"></i>
+                    <i class="icons_header fas fa-arrow-right"></i>
+                </div>
+                <div class="header__search pos_rel">
+                    <i class="icons_header icon_search fas fa-search pos_abs"></i>
+                    <input type="text" class="header__search-input" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                </div>
+                <div class="header__right flex">
+                    <div class="header__right-themes header__right-item pos_rel">
+                        <i class="icons_header icon_circle fas fa-tshirt"></i>
+                        <span class="title_icon-themes pos_abs">Chủ đề</span>
+                    </div>
+                    <div class="header__right-setting header__right-item pos_rel">
+                        <i class="icons_header icon_circle fas fa-cog"></i>
+                        <span class="title_icon-setting pos_abs">Cài đặt</span>
+                    </div>
+                    <div class="header__right-user header__right-item">
+                        <i class="icons_header icon_circle fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main flex-all col-12">
+                <!-- <img src="./asset/img/music_2.jpg" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <div class="footer pos-fixed flex col-12">
+        <div class="footer_infoMusic-current flex">
+            <div class="img_music-current">
+                <img src="./asset/img/tinhka.jpg" alt="">
+            </div>
+            <div class="content_music-current">
+                <p class='name_music-current'>Happy For You</p>
+                <p class="singer_music-current">Lukas Graham, Vũ</p>
+            </div>
+        </div>
+        <div class="footer_control-music flex">
+            <div class="directional_music flex-all">
+                <div class="random_music directional_music-item pos_rel">
+                    <i class="fas fa-random"></i>
+                    <span class="title_direct-music title_random pos_abs">Ngẫu nhiên</span>
+                </div>                
+                <div class="pre_music directional_music-item">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="music_pause-play directional_music-item">
+                    <i class="far fa-pause-circle"></i>
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="next_music directional_music-item">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="loop_music directional_music-item pos_rel">
+                    <i class="fas fa-retweet"></i>
+                    <span class="title_direct-music title_loop pos_abs">Lặp lại</span>
+                </div>
+            </div>
+            <div class="duration_music flex-all pos_rel">
+                <span class="timer-music time_music-start">00:00</span>
+                <input id="duration_current" class="duration_current" type="range" value="0" step="1" min="0" max="100">
+                <span class="timer-music time_music-end">04:21</span>
+            </div>
+            <audio src="" class='song_current'></audio>
+        </div>
+        <div class="footer_interactive-music flex">
+            <div class="footer_interactive-item interactive_mic">
+                <span class="icon_microphone">
+                    <i class="fas fa-microphone-alt"></i>
+                    <i class="fas fa-microphone-alt-slash"></i>
+                </span>
+            </div>
+            <div class="footer_interactive-item interactive_like">
+                <span class="icon_like">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </span>
+            </div>
+            <div class="control_volume footer_interactive-item flex-all">
+                <div class="interactive_volume">
+                    <i class="fas fa-volume-down"></i>
+                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div class="level_volume flex-all">
+                    <input type="range" min="0" max='10' class='level_volume-input'>
+                </div>
+            </div>
+            <div class="footer_interactive-item">
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

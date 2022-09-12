@@ -1,0 +1,106 @@
+:root{
+    --text-color-default: #424242;
+    --text-color-themes: #fff;
+    --text-color-active: #6b3483;
+    --background-title-icon: #495057;
+    --border-color-active: #6b3483;
+    --border-color: #d3d3d3;
+    --colorful-gradient: linear-gradient(90deg,#e74c3c,#ff6bcb);
+    --linear-heart: linear-gradient(to right, #9525fb, #ff70a4);
+    --linear-blue-green: linear-gradient( to right bottom, rgb(0, 174, 253), rgb(32, 227, 178));
+    --height-footer: 100px;
+}
+.col-12{
+    width: 100%;
+}
+.col-9{
+    width: 75%;
+}
+.col-6{
+    width: 50%;
+}
+.col-3{
+    width: 25%;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.pos-fixed{
+    position: fixed;
+}
+.flex{
+    display: flex;
+}
+.pos_rel{
+    position: relative;
+}
+.pos_abs{
+    position: absolute;
+}
+.flex-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element_none{
+    display:none;
+}
+.container{
+    height: calc(100vh - var(--height-footer));
+    justify-content: space-between;
+}
+.section{
+    width: 18%;
+    height: 100%;
+    background-color: #f2f2f2 ;
+    border-right: 0.5px solid  var(--border-color);
+}
+.aside{
+    width: 82%;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    background-color: white;
+}
+.footer{
+    bottom:0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index:10;
+    height: var(--height-footer);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 10px;
+    border-top: 0.5px solid  var(--border-color);
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/music_3.jpg');
+    background-size:auto;
+    /* background-repeat: no-repeat; */
+
+}
+/* .main img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+} */
